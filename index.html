@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adrian von Ziegler - Official Composer Website</title>
+    <meta name="description" content="Adrian von Ziegler is independent music composer from Swiss. Creates in genres: Celtic, Emotional, Relaxing, Dark, Oriental, Fantasy, Movie Scores, Metal etc.">
+    <meta name="keywords" content="Adrian von Ziegler, music composer, instrumental, swiss, celtic, relaxing, emotional, dark, fantasy, oriental, metal">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--Website Styles-->
+    <link href="assets/styles/css/main.min.css" rel="stylesheet">
+    <!--Cookies styles-->
+    <link href="assets/styles/css/cookieconsent.min.css" rel="stylesheet">
+    <!--Cookies-->
+    <script src="assets/js/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                container: document.getElementById("content"),
+                palette: {
+                    popup: {
+                        background: "hsl(235, 74%, 15%)"
+                    },
+                    button: {
+                        background: "#fff"
+                    },
+                },
+                revokable: true,
+                onStatusChange: function(status) {
+                    console.log(this.hasConsented() ?
+                        'enable cookies' : 'disable cookies');
+                },
+                law: {
+                    regionalLaw: false,
+                },
+                location: true,
+                type: "opt-out",
+                //elements: {
+                //link: '<a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" target="_blank" rel="nofollow">{{link}}</a>',
+                //},
+                content: {
+                    href: 'privacy-policy/',
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div id="header" class="header">
+            <a class="brand-link" href="/">
+                <div class="brand">
+                    <p>Adrian von Ziegler</p>
+                </div>
+            </a>
+            <nav id="nav" class="nav">
+                <div id="nav__links" class="nav__links">
+                    <a id="nav-link-1" class="nav-link" href="#carousel" class="current">Home</a>
+                    <a id="nav-link-2" class="nav-link" href="#about-me">About</a>
+                    <a id="nav-link-3" class="nav-link" href="#find-me">Music</a>
+                    <a id="nav-link-4" class="nav-link" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <!--/nav-->
+            <button id="menu-icon" class="hamburger hamburger--spring" type="button" aria-label="Menu" aria-controls="nav">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <!--/menu icon - hamburger-->
+        </div>
+        <!--/header-->
+        <main id="main" class="main">
+            <section id="carousel" class="carousel">
+                <div id="carousel__canvas" class="carousel__canvas">
+                    <img src="assets/img/carousel/forest-keyboard.jpg">
+                    <picture class="canvas__img">
+                        <source srcset="assets/img/carousel/21-The-Celtic-Collection-III.webp" type="image/webp" class="canvas__img--color">
+                        <source srcset="assets/img/carousel/21-The-Celtic-Collection-III.jpg" type="image/jpeg" class="canvas__img--color">
+                        <img src="assets/img/carousel/21-The-Celtic-Collection-III.jpg" alt="background image no 1" class="canvas__img--color">
+                    </picture>
+                    <picture class="canvas__img">
+                        <source srcset="assets/img/carousel/la_belle_au_bois_dormant_by_florentllamas.webp" type="image/webp" class="canvas__img--color">
+                        <source srcset="assets/img/carousel/la_belle_au_bois_dormant_by_florentllamas.jpg" type="image/jpeg" class="canvas__img--color">
+                        <img src="assets/img/carousel/la_belle_au_bois_dormant_by_florentllamas.jpg" alt="background image no 2" class="canvas__img--color">
+                    </picture>
+                    <picture class="canvas__img">
+                        <source srcset="assets/img/carousel/19-Saga.webp" type="image/webp" class="canvas__img--color">
+                        <source srcset="assets/img/carousel/19-Saga.jpg" type="image/jpeg" class="canvas__img--color">
+                        <img src="assets/img/carousel/19-Saga.jpg" alt="background image no 3" class="canvas__img--color">
+                    </picture>
+                    <picture class="canvas__img">
+                        <source srcset="assets/img/carousel/prison-of-the-soul__Aelathen.webp" type="image/webp" class="canvas__img--color">
+                        <source srcset="assets/img/carousel/prison-of-the-soul__Aelathen.jpg" type="image/jpeg" class="canvas__img--color">
+                        <img src="assets/img/carousel/prison-of-the-soul__Aelathen.jpg" alt="background image no 4" class="canvas__img--color">
+                    </picture>
+                    <picture class="canvas__img">
+                        <source srcset="assets/img/carousel/shadows-of-the-sun-by-Lapec.webp" type="image/webp" class="canvas__img--color">
+                        <source srcset="assets/img/carousel/shadows-of-the-sun-by-Lapec.jpg" type="image/jpeg" class="canvas__img--color">
+                        <img src="assets/img/carousel/shadows-of-the-sun-by-Lapec.jpg" alt="background image no 5" class="canvas__img--color">
+                    </picture>
+                    <picture class="canvas__img">
+                        <source srcset="assets/img/carousel/10-Odyssey.webp" type="image/webp" class="canvas__img--color">
+                        <source srcset="assets/img/carousel/10-Odyssey.jpg" type="image/jpeg" class="canvas__img--color">
+                        <img src="assets/img/carousel/10-Odyssey.jpg" alt="background image no 6" class="canvas__img--color">
+                    </picture>
+                </div>
+                <!--/carousel__canvas-->
+                <div id="carousel__sign" class="carousel__sign" version="1.0" xmlns="http://www.w3.org/2000/svg">
+                    <img class="sign__img" src="assets/img/flower-of-life.svg">
+                </div>
+                <!--/celtic sign-->
+                <div id="carousel__button-1" class="carousel__button carousel__button--one">
+                    <p class="sample-title">♫</p>
+                    <div class="forest-ghost-wrapper">
+                        <div class="forest-ghost"></div>
+                    </div>
+                    <audio autostart="0" id="sample-1" class="sample" src="assets/audio/Adrian_von_Ziegler-At_the_Summertide_Feast.mp3">
+                        <source src="assets/audio/Adrian_von_Ziegler-At_the_Summertide_Feast.og">
+                        <p>Your browser does not support audio playback</p>
+                    </audio>
+                </div>
+                <div id="carousel__button-2" class="carousel__button carousel__button--two">
+                    <p class="sample-title">♫</p>
+                    <div class="forest-ghost-wrapper">
+                        <div class="forest-ghost"></div>
+                    </div>
+                    <audio autostart="0" id="sample-2" class="sample" src="assets/audio/Adrian_von_Ziegler-Woodland_Tales.mp3">
+                        <source src="assets/audio/Adrian_von_Ziegler-Woodland_Tales.ogg">
+                        <p>Your browser does not support audio playback</p>
+                    </audio>
+                </div>
+                <div id="carousel__button-3" class="carousel__button carousel__button--three">
+                    <div class="forest-ghost-wrapper">
+                        <div class="forest-ghost"></div>
+                    </div>
+                    <audio autostart="0" id="sample-3" class="sample" src="assets/audio/Adrian_von_Ziegler-Galdrar.mp3">
+                        <source src="assets/audio/Adrian_von_Ziegler-Galdrar.ogg">
+                        <p>Your browser does not support audio playback</p>
+                    </audio>
+                    <p class="sample-title">♫</p>
+                </div>
+                <div id="carousel__button-4" class="carousel__button carousel__button--four">
+                    <div class="forest-ghost-wrapper">
+                        <div class="forest-ghost"></div>
+                    </div>
+                    <audio autostart="0" id="sample-4" class="sample" src="assets/audio/Adrian_von_Ziegler-Prison_of_the_Soul.mp3">
+                        <source src="assets/audio/Adrian_von_Ziegler-Prison_of_the_Soul.ogg">
+                        <p>Your browser does not support audio playback</p>
+                    </audio>
+                    <p class="sample-title">♫</p>
+                </div>
+                <div id="carousel__button-5" class="carousel__button carousel__button--five">
+                    <div class="forest-ghost-wrapper">
+                        <div class="forest-ghost"></div>
+                    </div>
+                    <audio autostart="0" id="sample-5" class="sample" src="assets/audio/Adrian_von_Ziegler-Desert_Magic.mp3">
+                        <source src="assets/audio/Adrian_von_Ziegler-Desert_Magic.ogg">
+                        <p>Your browser does not support audio playback</p>
+                    </audio>
+                    <p class="sample-title">♫</p>
+                </div>
+                <div id="carousel__button-6" class="carousel__button carousel__button--six">
+                    <p class="sample-title">♫</p>
+                    <div class="forest-ghost-wrapper">
+                        <div class="forest-ghost"></div>
+                    </div>
+                    <audio autostart="0" id="sample-6" class="sample" src="assets/audio/Adrian_von_Ziegler-Immortal.mp3">
+                        <source src="assets/audio/Adrian_von_Ziegler-Immortal.ogg">
+                        <p>Your browser does not support audio playback</p>
+                    </audio>
+                </div>
+                <div class="carousel__title">
+                    <p class="music-title">At The Summertide Feast</p>
+                    <a class="link-art" target="_blank" rel="nofollow" href="https://www.deviantart.com/aelathen">
+                        <p>art by Aelathen / cover of Celtic Collection III album</p>
+                    </a>
+                </div>
+                <div class="carousel__title">
+                    <p class="music-title">Woodland Tales</p>
+                    <a class="link-art" target="_blank" rel="nofollow" href="https://www.deviantart.com/florentllamas/art/La-Belle-au-bois-dormant-459954612">
+                        <p>art by FlorentLlamas / La Belle au bois dormant</p>
+                    </a>
+                </div>
+                <div class="carousel__title">
+                    <p class="music-title">Galdrar</p>
+                    <a class="link-art" target="_blank" rel="nofollow" href="https://www.deviantart.com/aelathen">
+                        <p>art by Aelathen / cover of SAGA album</p>
+                    </a>
+                </div>
+                <div class="carousel__title">
+                    <p class="music-title">Prison of the Soul</p>
+                    <a class="link-art" target="_blank" rel="nofollow" href="https://www.deviantart.com/aelathen/art/A-Gothic-Fairytale-540010807">
+                        <p>art by Aelathen / A Gothic Fairytale</p>
+                    </a>
+                </div>
+                <div class="carousel__title">
+                    <p class="music-title">Desert Magic</p>
+                    <a class="link-art" target="_blank" rel="nofollow" href="https://www.deviantart.com/lapec/art/Shadows-of-the-Sun-447860971">
+                        <p>art by Lapec / Shadow of the Sun</p>
+                    </a>
+                </div>
+                <div class="carousel__title">
+                    <p class="music-title">Immortal</p>
+                    <a class="link-art" target="_blank" rel="nofollow" href="https://www.deviantart.com/aelathen">
+                        <p>>art by Aelathen / cover of Odyssey album</p>
+                    </a>
+                </div>
+                <!--/carousel__buttons-->
+            </section>
+            <!--/carousel-->
+            <section id="about-me" class="about-me">
+                <div class="about-me__content">
+                    <hr class="about-me__hr">
+                    <div class="about-me__header">
+                        <h1>Adrian von Ziegler</h1>
+                        <h2>Instrumental Music Composer</h2>
+                    </div>
+                    <div class="about-me__under-header">
+                        <img class="under-header__img in-viewport" src="assets/img/adrian-von-ziegler.png">
+                        <p class="under-header__text">
+                            I'm an independent music composer from Switzerland who creates Celtic Music, Emotional Music, Relaxing Music, Dark Music, Oriental Music, Fantasy Music, Movie Scores, Metal and many other genres.
+                        </p>
+                        <p class="under-header__text--quote">"Music continues to tell a story where words end."<br><span>~ quote by Adrian von Ziegler, based on J.W. von Goethe</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--/about-me-->
+            <section id="find-me" class="find-me">
+                <div class="find-me__header">
+                    <h2>You can find me on:</h2>
+                </div>
+                <div class="find-me__content">
+                    <div class="find-me__icons">
+                        <a class="find-me__links" target="_blank" rel="nofollow" href="https://open.spotify.com/artist/6qDQ6rJG5TOT7PppxBKhqI">
+                            <div class="find-me__icon spotify-icon">
+                                <img src="assets/img/icons/spotify-logo.png">
+                            </div>
+                        </a>
+                        <a class="find-me__links" target="_blank" rel="nofollow" href="https://www.deezer.com/pl/artist/5098098/top_track?autoplay=true">
+                            <div class="find-me__icon deezer-icon">
+                                <img src="assets/img/icons/icons8-deezer.svg">
+                                <p>deezer</p>
+                            </div>
+                        </a>
+                        <a class="find-me__links" target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UCSeJA6az0GrNM4_-pl3HQSQ">
+                            <div class="find-me__icon youtube-icon">
+                                <img src="assets/img/icons/icons8-play-button.svg">
+                            </div>
+                        </a>
+                        <a class="find-me__links" target="_blank" rel="nofollow" href="https://store.cdbaby.com/Artist/AdrianvonZiegler">
+                            <div class="find-me__icon cd-baby-icon">
+                                <img src="assets/img/icons/cd-baby-logo.png">
+                            </div>
+                        </a>
+                        <a class="find-me__links" target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/">
+                            <div class="find-me__icon bandcamp-icon">
+                                <img src="assets/img/icons/bandcamp-logo.png">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="patron__header">
+                        <h3>You can also became my patron</h3>
+                    </div>
+                    <div class="patron__content">
+                        <div class="find-me__icons">
+                            <a class="find-me__links" target="_blank" rel="nofollow" href="https://www.patreon.com/AdrianvonZiegler">
+                                <div class="find-me__icon become-patron-button">
+                                    <img src="assets/img/icons/become_a_patron_button.png">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/find-me-->
+            <section id="music-albums" class="music-albums">
+                <div class="music-albums__header">
+                    <h2>Music Albums</h2>
+                    <h3>© Cover artworks by <a class="body-link" rel="nofollow" href="https://www.facebook.com/AelathenArt/" target="_blank">Carina Grimm aka Aelathen</a></h3>
+                </div>
+                <div class="music-albums__content">
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/the-celtic-collection-iii">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/21-The-Celtic-Collection-III.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/21-The-Celtic-Collection-III.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/21-The-Celtic-Collection-III.jpg" alt="cover image The Celtic Collection III" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">The Celtic Collection III</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/fable">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/20-Fable.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/20-Fable.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/20-Fable.jpg" alt="cover image Fable" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Fable</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/saga">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/19-Saga.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/19-Saga.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/19-Saga.jpg" alt="cover image Saga" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Saga</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/celtic-guitar-dance-with-the-strings">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/18-Celtic-Guitar_Dance-With-The-Strings.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/18-Celtic-Guitar_Dance-With-The-Strings.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/18-Celtic-Guitar_Dance-With-The-Strings.jpg" alt="cover image Celtic Guitar Dance With The Strings" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Celtic Guitar - Dance With The Strings</h3>
+                        </a>
+                        <p class="album__description">Adrian von Ziegler & Lukasz Kapuscinski</p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/moonsong">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/17-Moonsong.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/17-Moonsong.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/17-Moonsong.jpg" alt="cover image Moonsong" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Moonsong</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/track/atmospheres">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/16-atmospheres.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/16-atmospheres.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/16-atmospheres.jpg" alt="cover image Atmospheres" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Atmospheres</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/queen-of-thorns">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/15-Queen-of-Thorns.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/15-Queen-of-Thorns.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/15-Queen-of-Thorns.jpg" alt="cover image Queen of Thorns" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Queen of Thorns</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/the-celtic-collection-ii">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/14-The-Celtic-Collection-II.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/14-The-Celtic-Collection-II.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/14-The-Celtic-Collection-II.jpg" alt="cover image The Celtic Collection II" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">The Celtic Collection II</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/libertas">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/13-Libertas.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/13-Libertas.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/13-Libertas.jpg" alt="cover image Libertas" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Libertas</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/vagabond">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/12-Vagabond.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/12-Vagabond.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/12-Vagabond.jpg" alt="cover image Vagabond" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Vagabond</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/feather-and-skull">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/11-Feather-And-Skull.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/11-Feather-And-Skull.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/11-Feather-And-Skull.jpg" alt="cover image Feather And Skull" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Feather And Skull</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/odyssey">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/10-Odyssey.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/10-Odyssey.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/10-Odyssey.jpg" alt="cover image Odyssey" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Odyssey</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/the-celtic-collection">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/09-The-Celtic-Collection.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/09-The-Celtic-Collection.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/09-The-Celtic-Collection.jpg" alt="cover image The Celtic Collection" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">The Celtic Collection</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/starchaser-2">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/08-Starchaser.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/08-Starchaser.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/08-Starchaser.jpg" alt="cover image Starchaser" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Starchaser</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/spellbound">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/07-Spellbound.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/07-Spellbound.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/07-Spellbound.jpg" alt="cover image Spellbound" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Spellbound</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/mortualia">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/06-Mortualia.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/06-Mortualia.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/06-Mortualia.jpg" alt="cover image Mortualia" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Mortualia</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/mirror-of-the-night">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/05-Mirror-of-the-Night.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/05-Mirror-of-the-Night.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/05-Mirror-of-the-Night.jpg" alt="cover image Mirror of the Night" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Mirror of the Night</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/wanderer">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/04-Wanderer.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/04-Wanderer.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/04-Wanderer.jpg" alt="cover image Wanderer" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Wanderer</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/across-acheron">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/03-Across-Acheron.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/03-Across-Acheron.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/03-Across-Acheron.jpg" alt="cover image Across Acheron" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Across Acheron</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/lifeclock">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/02-Lifeclock.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/02-Lifeclock.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/02-Lifeclock.jpg" alt="cover image Lifeclock" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Lifeclock</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                    <div class="album">
+                        <a target="_blank" rel="nofollow" href="https://adrianvonziegler.bandcamp.com/album/requiem">
+                            <picture class="album__cover">
+                                <source srcset="assets/img/albums-covers/01-Requiem.webp" type="image/webp" class="cover__img">
+                                <source srcset="assets/img/albums-covers/01-Requiem.jpg" type="image/jpeg" class="cover__img">
+                                <img src="assets/img/albums-covers/01-Requiem.jpg" alt="cover image Requiem" class="cover__img">
+                            </picture>
+                            <h3 class="album__title">Requiem</h3>
+                        </a>
+                        <p class="album__description"></p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="contact__header">
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact__content">
+                    <p>For business enquiries:</p>
+                    <p class="changeat">adrianvonziegler<i class="fa fa-at" aria-hidden="true"></i>gmx.ch</p>
+                    <p>your email</p>
+                    <div class="icons-wrapper">
+                        <div class="icons-wrapper__fb-icon">
+                            <a href="https://www.facebook.com/AdrianvonZiegler/">
+                                <img src="assets/img/icons/icons8-facebook-old-filled.svg">
+                            </a>
+                        </div>
+                        <div class="icons-wrapper__tt-icon">
+                            <a href="https://twitter.com/adrianvziegler">
+                                <img src="assets/img/icons/icons8-twitter-filled.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer">
+                <div class="footer__top">
+                    <a class="top__link" href="privacy-policy">
+                        <p>Privacy Policy</p>
+                    </a>
+                </div>
+                <div class="footer__bottom">
+                    <div class="bottom__copyright">
+                        <p>Adrian von Ziegler &copy;
+                            <!-- Copyright time updater -->
+                            <span id="copyright__date"></span> - all&nbsp;rights&nbsp;reserved.</p>
+                    </div>
+                    <div class="bottom__created">
+                        <p>
+                            <span>Created by: </span>
+                            <a class="created__link" rel="nofollow" href="https://www.everes.studio">
+                                Everes<img class="butterfly-everes" src="assets/img/icons/logo-everes-studio64x51.svg" alt="logo Everes Studio" />Studio
+                                <span class="r">®</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <!--/main-->
+    </div>
+    <!--/page-wrapper-->
+
+    <!--SCRIPTS-->
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <!--main script-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
