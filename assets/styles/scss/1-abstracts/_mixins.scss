@@ -1,0 +1,163 @@
+@charset "UTF-8";
+//By Jake Albaugh
+//https://codepen.io/jakealbaugh/post/css4-variables-with-fallbacks-using-sass
+//creates css4 variables
+// for each variable map
+
+@mixin css4-variables {
+    // for each variable map
+  @each $var-map-name, $var-map in $var-maps {
+    // for each variable in the variable map
+    @each $var, $val in $var-map {
+      // if it is a map, go another level deep
+      @if type-of($val) == map {
+        // each in the map
+        @each $var-n, $val-n in $val {
+          // do the definition
+            $prop: --#{$var-map-name}-#{$var}-#{$var-n};
+            #{$prop}: $val-n
+        }
+      } @else {
+        // do the definition
+        $prop: --#{$var-map-name}-#{$var};
+        #{$prop}: $val
+      }
+    }
+  }
+}
+// the variable mixin takes a property and variable name 
+// and an optional override to hide the fallback
+@mixin v($prop, $var, $show-fall: true) {
+    // get the property's map name(s)
+    $map-name: map-get($props, $prop);
+    $nest-name: null;
+    $nest-map-name: null;
+    $map: null;
+    $var-fall: null;
+    $var-output: null;
+    // if a list, we need to go deeper
+    @if type-of($map-name) == list {
+      $nest-name: nth($map-name, 1);
+      $nest-map-name: nth($map-name, 2);
+    }
+    // if it is a nested map
+    @if $nest-name {
+      // get the map from nested map-name
+      $map: map-get($var-maps, $nest-name);
+      // get the nested map
+      $nest-map: map-get($map, $nest-map-name);
+      // fallback value, get the var value from the nested map
+      $var-fall: map-get($nest-map, $var);
+      // our css4 variable output
+      $var-output: var(--#{$nest-name}-#{$nest-map-name}-#{$var});
+    } @else {
+      // get the map from map name
+      $map: map-get($var-maps, $map-name);
+      // fallback value, grab the variable's value from the map
+      $var-fall: map-get($map, $var);
+      // our css4 variable output
+      $var-output: var(--#{$map-name}-#{$var});
+    }
+    // if show fallback is not overridden to be null
+    @if $show-fall {
+      #{$prop}: $var-fall;
+    }
+    // css4 variable output
+    #{$prop}: $var-output;
+  }
+/////////////////////////////////////
+//
+//cross browser - opacity mixin by Sebastian Ekström
+//http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//centering mixins
+@mixin margin-center {
+  margin: 0 auto;
+}
+@mixin flex-center {
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin grid-center{
+  display: -ms-grid;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+// elements' size mixin
+@mixin max-view {
+  width: 100vw;
+  height: 100vh;
+}
+
+@mixin max-size {
+  @include v(width, full-percentage);
+  @include v(height, full-percentage);
+}
+/////////////////////////////
+@mixin grayscale($g) {
+  -webkit-filter: grayscale($g);
+  filter: grayscale($g);
+}
+
+//animation mixins by Sebastian Ekström
+//http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+/* autoprefixer: off */
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+      @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+      @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+      @content;
+  }
+}
+
+@mixin animation-name($str-name) {
+  -webkit-animation-name: #{$str-name};
+  -moz-animation-name: #{$str-name};
+  -ms-animation-name: #{$str-name};
+  -o-animation-name: #{$str-name};
+  animation-name: #{$str-name};      
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+////////////////////////////////
+/* autoprefixer: on */
+/* CSS3 calc() function to perform calculations 
+by Agnieszka Trefler
+http://webscene.pl/knowledge/mixin-sass/
+*/
+@mixin calc($property, $expression) {
+  #{$property}: calc(#{$expression});
+} 
+// My mixins
+@mixin ghosts-start-position {
+  top: (map-get($full-size, "full-viewport-height") + 20vh);
+  left: (map-get($full-size, "full-viewport-width")) / 2;
+}
+
+
+

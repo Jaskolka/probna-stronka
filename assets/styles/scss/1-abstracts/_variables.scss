@@ -1,0 +1,90 @@
+@charset "UTF-8";
+//maps of variables//////////////////////////
+
+//all of color variables
+$color: (
+  "primary-color": hsl(360, 100%, 100%),
+  "secondary-color": hsl(0, 0%, 0%),
+  "tertiary-color": hsl(235, 74%, 15%),
+);
+
+//all of font variables
+$font: (
+  "size": (
+    "basic-percentage": 62.5%,
+    "p": 1.6rem,
+    "h1": 3.4rem, "h2": 2rem,
+    "h3": 1.6rem, "h4": 1.4rem,
+  ),
+  "weight": (
+    "bold": 600,
+    "regular": 400,
+  ),
+  "line": (
+    "small": 1.2,
+    "normal": 1.4,
+    "medium": 1.8,
+    "heigh": 2.4,
+  ),
+  "family": (
+    "body": ('Quicksand', sans-serif),
+    "header": ('Cinzel', serif),
+  ),
+);
+//all of basic z-index variables
+$z-layers: (
+  "header":          9999, 
+  "footer":            10,
+  "default":            1,
+  "below":             -1,
+  "bottomless-pit": -9999,
+);
+$full-size: (
+  "full-percentage"     : 100%,
+  "full-viewport-width" : 100vw,
+  "full-viewport-height": 100vh,
+);
+// associate variable map name to an actual variable map
+$var-maps: (
+  "color": $color, 
+  "font":  $font,
+  "z-layers": $z-layers,
+  "full-size": $full-size,
+);
+
+// which property uses which var map
+// you would edit this for each property you want to use variables for
+$props: (
+  "background-color": color,
+  "color":            color,
+  "border-color":     color,
+  "font-family":      (font, family),
+  "font-size":        (font, size),
+  "font-weight":      (font, weight),
+  "line-height":      (font, line),
+  "z-index":          z-layers,
+  "width":            full-size,
+  "height":           full-size,
+  "top":              full-size,
+  "left":             full-size,
+);
+
+
+// single variables /////////////////////////////////
+$basic-transition: all 2s linear;
+$max-percentage: 100%;
+//header
+$header-height: 80px;
+// celtic-sign variables
+$sign-landscape-size: 30vh;
+$sign-portrait-size: 30vw;
+//forest ghost buttons variables
+$ghost-size: 20px;
+$ghost-top-position: 120vh;
+$ghost-left-position: 50vw;
+$ghost-anim-delay: 800ms;
+
+
+
+
+
